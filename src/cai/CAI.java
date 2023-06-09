@@ -183,7 +183,24 @@ public class CAI {
                             break;
                     }
                 } else {
-                    
+                    switch (random.nextInt(4)) {
+                        case 0:
+                            System.out.println("No. Por favor intenta de nuevo.");
+                            break;
+                        case 1:
+                            System.out.println("Incorrecto. Trata una vez mas.");
+                            break;
+                        case 2:
+                            System.out.println("No te rindas. Sigue intentando.");
+                            break;
+                        case 3:
+                            System.out.println("No esta bien. Sigue practicando.");
+                            break;
+                    }
+                }
+            }
+
+
 
                 
 
