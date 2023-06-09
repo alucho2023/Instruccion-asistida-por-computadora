@@ -164,6 +164,26 @@ public class CAI {
                     default:
                         respuesta = 0;
                 }
+                estrespuesta = input.nextInt();
+
+                if (estrespuesta == respuesta) {
+                    correcto++;
+                    switch (random.nextInt(4)) {
+                        case 0:
+                            System.out.println("¡Muy bien!");
+                            break;
+                        case 1:
+                            System.out.println("¡Excelente!");
+                            break;
+                        case 2:
+                            System.out.println("¡Buen trabajo!");
+                            break;
+                        case 3:
+                            System.out.println("¡Sigue asi!");
+                            break;
+                    }
+                } else {
+                   
 
                 
 
