@@ -208,6 +208,17 @@ public class CAI {
                 System.out.println("Por favor pide ayuda adicional a tu instructor. " + "Tu porcentaje de respuestas es: " + porcentajec + "%");
             }
 
+            correcto = 0;
+
+            System.out.print("¿Desea continuar con el test aritmetico? (s/n): ");
+            String keepGoingString = input.next();
+
+            if (!keepGoingString.equalsIgnoreCase("s")) {
+                keepGoing = false;
+            }
+        }
+
+    }
 
                 
 
