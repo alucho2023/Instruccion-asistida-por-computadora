@@ -116,6 +116,56 @@ public class CAI {
             System.out.println("3. MULTIPLICACION (*)");
             System.out.println("4. DIVISION (/)");
             System.out.println("5. MISCELANEA (Mezcla de todas las operaciones)");
+                        tipo = input.nextInt();
+            int mNum = 0;
+
+            switch (dificultad) {
+                case 1:
+                    mNum = 10;
+                    break;
+                case 2:
+                    mNum = 100;
+                    break;
+                case 3:
+                    mNum = 1000;
+                    break;
+                case 4:
+                    mNum = 10000;
+                    break;
+            }
+
+            for (int i = 0; i < 10; i++) {
+                int num1 = random.nextInt(mNum);
+                int num2 = random.nextInt(mNum);
+
+                
+                switch (tipo) {
+                    case 1:
+                        respuesta = num1 + num2;
+                        System.out.printf("¿Cuanto es %d + %d? ", num1, num2);
+                        break;
+                    case 2:
+                        respuesta = num1 - num2;
+                        System.out.printf("¿Cuanto es %d - %d? ", num1, num2);
+                        break;
+                    case 3:
+                        respuesta = num1 * num2;
+                        System.out.printf("¿Cuanto es %d x %d? ", num1, num2);
+                        break;
+                    case 4:
+                        respuesta = num1 / num2;
+                        System.out.printf("¿Cuanto es %d / %d? ", num1, num2);
+                        break;
+                    case 5:
+                        respuesta = ((num1 + num2) * (num1 - num2)) / num1;
+                        System.out.printf("Cuanto es (%d + %d) * (%d - %d) / %d%% ?", num1, num2, num1, num2, num1);
+
+                        break;
+                    default:
+                        respuesta = 0;
+                }
+
+                
 
 }
 
