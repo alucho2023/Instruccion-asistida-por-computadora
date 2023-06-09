@@ -200,6 +200,13 @@ public class CAI {
                 }
             }
 
+            double porcentajec = ((double) correcto / (double) (10)) * 100;
+
+            if (porcentajec >= 75) {
+                System.out.println("Felicidades, estás listo para pasar al siguiente nivel!" + " Tu porcentaje de respuestas es: " + porcentajec + "%");
+            } else {
+                System.out.println("Por favor pide ayuda adicional a tu instructor. " + "Tu porcentaje de respuestas es: " + porcentajec + "%");
+            }
 
 
                 
